@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.center_item {
+
+
+    h1 {
+       font-size: 4rem;
+        padding: 3rem auto;
+        background-color: rgb(68, 68, 188);
+        color: #fff !important;
+    }
+}
+// footer start
+
+$bg_background_color:#f4f5ff;
+$heading_color :#2f1c6a;
+$hover_color:#099f7c;
+
+footer{
+    background-color: $bg_background_color;
+  
+    .row_gap{
+        padding: 7rem 0rem !important;
+        
+        .first_col{
+            p {
+                font-size: 1.5rem;
+                 line-height: 2.4rem;
+            }
+            & > *:not(:last-child){
+                margin-bottom: 0.9rem;
+            }
+        }
+
+        .btn_read{
+            background-color: #6f2eff78;
+            font-size: 1.5rem;
+
+            &:hover{
+                background-color: #fff;
+                border: 1px solid $heading_color;
+            }
+        }
+
+        .section_main{
+            span{
+                font-size: 1.9rem;
+                font-weight: 600;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+            }
+            li{
+                list-style: none;
+                font-weight:450 ;
+                  &:first-child {
+                        margin-top: 1rem;
+                    }
+                
+                a{
+                    text-decoration: none;
+                    color: $heading_color;
+                    font-size: 1.4rem;
+                    line-height: 2.4rem;
+                    &:hover{
+                        color:$hover_color ;
+                    }
+                  
+                }
+            }
+            .main_title_second{
+                margin-top: 1rem;
+            }
+            .hidden_screen{
+            display: none !important;
+             }
+             .show_main{
+                display: block;
+             }
+        }
+
+    }
+    
+}
+@media screen and (max-width:575px) {
+    html{
+        font-size: 9px;
+    }
+    .section_main{
+        .row_top_middle{
+            margin-top: 2rem !important;
+        }
+        .hidden_screen{
+            display: block !important;
+        }
+         .show_main{
+                display: none !important;
+             }
+    }
+}
